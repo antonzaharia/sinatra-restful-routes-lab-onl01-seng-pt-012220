@@ -27,3 +27,4 @@ class ApplicationController < Sinatra::Base
     binding.pry
     erb :show
   end
+end
