@@ -17,9 +17,9 @@ class ApplicationController < Sinatra::Base
 
   post '/recipes/new' do
     @recipe = Recipe.create(name: params[:name], ingredients: params[:ingredients], cook_time: params[:params])
-    binding.pry
-    @recipe.save
 
+    @recipe.save
+binding.pry
     redirect to("/recipes/#{@recipe.id}")
   end
 
